@@ -20,7 +20,7 @@ $(document).ready(() => {
 	nav_menu.innerHTML = ""
 	nav_menu_items.forEach((element) => {
 		nav_menu.innerHTML += `<li class="nav-item mx-0 mt-2 mx-lg-4">
-                                <a class="btn btn-outline-light text-white nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger bg-secondary" href="${element.link}">${element.title}</a>
+                                <a class="btn btn-outline-light text-white nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger bg-primary" href="${element.link}">${element.title}</a>
                                 </li>`
 	})
 	about_1.innerHTML = about_text_1
@@ -40,7 +40,7 @@ $(document).ready(() => {
 			portfolio.innerHTML += `<div class="${
 				numProjects % 2 == 0
 					? "card bg-light text-secondary"
-					: "card bg-secondary"
+					: "card bg-primary"
 			}">  
                                     <h4 class="card-header">${
 										project.title
@@ -49,12 +49,12 @@ $(document).ready(() => {
                                         <p class="card-text">${project.desc}</p>
                                     </div>
                                     <div class="card-footer">
-                                    <a class="btn btn-outline-light bg-secondary mx-2" target="_blank" href="${
+                                    <a class="btn btn-outline-light bg-primary mx-2" target="_blank" href="${
 										project.code_link
 									}">
                                         <p class="m-0">The Code</p>
                                     </a>
-                                    <a class="btn bg-secondary ${
+                                    <a class="btn bg-primary ${
 										numProjects % 2 == 0
 											? "text-white"
 											: "btn-outline-light"
